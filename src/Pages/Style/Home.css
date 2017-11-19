@@ -1,0 +1,92 @@
+body{
+	background-color: #c6c6c6;
+	margin: 0;
+	padding: 0;
+	align-content: center;
+}
+
+.header-img {
+	position: relative;
+	top: 50px;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	width: 200%;
+	border-bottom: 2px solid #43a5e6;
+}
+
+.row {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: inline-flex;
+	align-items:center;
+	top: 60px;
+}
+
+#profile-pic {
+	border-style: solid;
+	border-size: 5px;
+	border-color: silver;
+	border-radius: 15px;
+	padding:3px;
+	width: 320px;
+	height: 380px;
+	margin: auto;
+}
+
+.img-div {
+	position: relative;
+	left: 5%;
+	width: 320px;
+	height: 380px;
+	background-color: #000000;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	float: left;
+}
+
+.short-bio {
+	margin-left: 60px;
+	background-color: #ffffff;
+	border-style: solid;
+	border-size: 2px ;
+	border-color: #43a5e6;
+	border-radius: 15px;
+	padding-top: 20px;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+	display: inline;
+	width:50%;
+	height: 380px;
+	left: 5%;
+}
+
+#short-bio-head{
+	position:relative;
+	left: 30%;
+	padding: 5px;
+}
+#short-bio-foot{
+	position: relative;
+	left: 35%;
+}
+
+p {
+	padding: 30px;
+	margin: auto;
+}
+
+
+span {
+	font-weight: bold;
+	font-size: 20px;
+}
+.row | a {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	font-style: normal;
+}

@@ -1,0 +1,22 @@
+.icon {
+
+	width: 120px;
+	height: 120px;
+	display: block;
+	align-self: center;
+}
+
+.link-container {
+	position: relative;
+	top: 60px;
+	left: 25%;
+	margin: 40px;
+	border: 2px solid #43a5e6;
+	border-radius: 15px;
+	background-color: #ffffff;
+	display: block;
+	width: 50%;
+	box-shadow: 10px 10px 5px #888888;
+	justify-content: center;
+	align-content: center;
+}

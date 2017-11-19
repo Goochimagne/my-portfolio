@@ -1,0 +1,78 @@
+body {
+	margin-bottom: 30px;
+}
+
+.pg-bar {
+	margin: 14px;
+	margin-left: 50px;
+	border-radius: 30px;
+	position: relative;
+	left: 50px;
+	box-shadow: 5px 5px 2.5px #888888;
+	height: 30px;
+	width: 65%;
+	background-color: #dbe0e0;
+}
+
+.proficiency {
+	float: right;
+	position: relative;
+	top: 40px;
+	left: -5px;
+	margin: 30px;
+	border: 2px solid #43a5e6;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-color: #ffffff;
+	box-shadow: 10px 10px 5px #888888;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	max-width: 50%;
+	width: 35%;
+	height: 570px;
+	align-content: center;
+}
+
+
+
+.about {
+	position: relative;
+	top: -25px;
+	margin: 30px;
+}
+
+
+span {
+	display: inline;
+}
+
+.bar-title {
+	font-size: 22px;
+	position: relative;
+	top: 45px;
+	left: 20px;
+
+}
+
+.resume-container {
+	position: relative;
+	top: 72px;
+	left: 42px;
+	border: 2px solid #43a5e6;
+	border-radius: 15px;
+	background-color: #ffffff;
+	box-shadow: 10px 10px 5px #888888;
+	float: left;
+	max-width: 50%;
+	width: 50%;
+	min-width: 400px;
+	min-height: 500px;
+	align-content: center;
+}
+
+#resume {
+	align-self: center;
+	width:90%;
+	height:500px;
+	margin: 30px;
+}

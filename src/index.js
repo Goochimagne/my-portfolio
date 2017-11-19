@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  NavLink
+  NavLink, Switch
 } from 'react-router-dom'
-import './index.css';
+import './Pages/Style/index.css';
 import About from './Pages/About.js';
 import Contact from './Pages/Contact.js';
 import Home from './Pages/Home.js';
@@ -19,7 +19,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
 	<Router>
     <div >
-			<nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<nav className="navbar navbar-expand-lg navbar-white bg-white fixed-top">
       	<NavLink className="navbar-brand" to="/">Nick Gooch</NavLink>
       	<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -48,8 +48,9 @@ ReactDOM.render(
         </form>
     	</nav>
 
-
+			<Switch>
       <Route exact path="/" component={Home}/>
+			</Switch>
       <Route path="/about" component={About}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/links" component={Links}/>

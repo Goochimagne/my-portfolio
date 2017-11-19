@@ -1,0 +1,17 @@
+
+.article {
+border: 2px solid #43a5e6;
+border-radius: 15px;
+background-color: #ffffff;
+display: inline-flex;
+box-shadow: 10px 10px 5px #888888;
+}
+
+iframe {
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	vertical-align: middle;
+	border-radius: 10px;
+	border: 2px solid #43a5e6;
+}
