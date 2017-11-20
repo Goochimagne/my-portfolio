@@ -21,6 +21,11 @@ class Home extends Component {
 				<div className="row">
 					<div className="img-div">
 						<img id="profile-pic" src={profile} />
+						<span id='name'>Nicholas Braxton Gooch</span>
+						<span id='email'>e-mail: <a id='gmail' href='./contact'>
+						nbgooch@gmail.com
+						</a></span>
+
 					</div>
 						<div className="short-bio">
 							<span id="short-bio-head">A little about me..</span>

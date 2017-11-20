@@ -20,31 +20,32 @@ ReactDOM.render(
 	<Router>
     <div >
 			<nav className="navbar navbar-expand-lg navbar-white bg-white fixed-top">
-      	<NavLink className="navbar-brand" to="/">Nick Gooch</NavLink>
+      	<p className="navbar-brand">Nick Gooch</p>
       	<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       	</button>
 
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/">Home </NavLink>
+            <NavLink exact activeClassName='active' className="nav-link" to="/">Home </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about">About</NavLink>
+            <NavLink activeClassName='active' className="nav-link" to="/about">About</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/projects">Projects</NavLink>
+            <NavLink
+						activeClassName='active' className="nav-link" to="/projects">Projects</NavLink>
           </li>
 					<li className="nav-item">
-            <NavLink className="nav-link" to="/links">Links</NavLink>
+            <NavLink activeClassName='active' className="nav-link" to="/links">Links</NavLink>
           </li>
 					<li className="nav-item">
-            <NavLink className="nav-link" to="/contact">Contact Me</NavLink>
+            <NavLink activeClassName='active' className="nav-link" to="/contact">Contact Me</NavLink>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
           <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" ></input>
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button className="btn btn-outline-success my-3 my-md-0" type="submit">Search</button>
         </form>
     	</nav>
 
@@ -59,14 +60,3 @@ ReactDOM.render(
   </Router>, document.getElementById('root'));
 
 registerServiceWorker();
-
-// <div className="render">
-// 	<nav className="navbar">
-// 		<ul className="navbar">
-// 		<li className="nav-item nav-brand"><NavLink to="/">Nick Gooch</NavLink></li>
-// 		<li className="nav-item"><NavLink to="/about">About</NavLink></li>
-// 		<li className="nav-item"><NavLink to="/projects">Projects</NavLink></li>
-// 		<li className="nav-item"><NavLink to="/NavLinks">NavLinks</NavLink></li>
-// 		<li className="nav-item"><NavLink to="/contact">Contact</NavLink></li>
-// 		</ul>
-// 	</nav>

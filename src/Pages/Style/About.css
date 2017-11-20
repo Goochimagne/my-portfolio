@@ -37,7 +37,7 @@ body {
 
 .about {
 	position: relative;
-	top: -25px;
+	top: 25px;
 	margin: 30px;
 }
 
@@ -75,4 +75,14 @@ span {
 	width:90%;
 	height:500px;
 	margin: 30px;
+}
+.row {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
