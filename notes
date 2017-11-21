@@ -6,9 +6,9 @@
 
 4. Animate div to react to hover extending with and revealing info.
 
-5. Learn about how to query the github api
+5. Fix setState of undefined
 
-6. Create dummy email to send me message from the Contct page.
+6. Create dummy email to send me message from the Contact page.
 
 7. Implement search feature.
 
@@ -27,5 +27,7 @@
 14. Additional content on the links page?
 
 15. Layout the form for Contact page.
+
+16. Use google api to display calendar.
 
 99. Fix gh-pages display.

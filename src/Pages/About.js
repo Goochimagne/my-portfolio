@@ -21,7 +21,6 @@ class About extends Component {
 		const cplus = 65;
 		const objc = 75;
 		const assembly = 50;
-		const batch = 25;
 		const sql = 80;
 		const perl = 10;
 		const ts = 30;

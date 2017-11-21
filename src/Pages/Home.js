@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route, Link, Switch
-} from 'react-router-dom'
 
 import profile from '../resources/profile.jpg'
 
-import About from './About.js'
 import Article from './components/Article.js'
 import Header from './components/Header.js'
 
@@ -40,15 +35,15 @@ class Home extends Component {
 				<div className="row">
 					<div id='schedule'>
 					</div>
-					<Article width={300} height={240} link={"https://www.youtube.com/embed/MhkGQAoc7bc"}/>
+					<Article link={"https://www.youtube.com/embed/MhkGQAoc7bc"}/>
 				</div>
 				<div className="row">
 
-				<Article width={300} height={240} link={"https://www.youtube.com/embed/GY7Ps8fqGdc"}/>
+				<Article link={"https://www.youtube.com/embed/GY7Ps8fqGdc"}/>
 				</div>
 				<div className="row">
 
-				<Article width={300} height={240} link={"https://www.youtube.com/embed/VdyORTskPGA"}/>
+				<Article link={"https://www.youtube.com/embed/VdyORTskPGA"}/>
 				</div>
 			</div>
     );

@@ -18,10 +18,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-		"deploy" : "yarn build&&gh-pages -d build"
-
+    "deploy": "yarn build&&gh-pages -d build"
   },
   "devDependencies": {
     "bootstrap": "4.0.0-alpha.6"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goochimagne/my-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goochimagne/my-portfolio/issues"
   }
 }
