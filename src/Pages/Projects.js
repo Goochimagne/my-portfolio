@@ -1,31 +1,10 @@
 import React, { Component } from 'react';
-
 import './Style/Projects.css'
 import axios from 'axios'
 
-function RepoGrid(props) {
-	return (
-			<ul className='repo-list'>
-				{props.repos.map(function(repo) {
-					<li key={repo.name} className="repo-item">
-						<ul className="repo-info">
-							<li clssName="repo-name">{repo.name}</li>
-							<li clssName="repo-link">
-								<a href={repo.html_url}>
-								{repo.html_url}
-								</a>
-							</li>
-							<li clssName="repo-name">{}</li>
-						</ul>
-					</li>
-				})}
-			</ul>
-	)
-}
-
 class Projects extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 			this.state = {
 				username: 'Goochimagne',
 				repos: null
@@ -33,23 +12,56 @@ class Projects extends Component {
 	}
 
 	componentDidMount() {
-		let self = this
-		axios.get('https://api.github.com/users/' + this.state.username + '/repos').then((response) => {
-			console.log(response.data);
-			self.setState(function() {
-				repos: response.data
+		axios.get('https://api.github.com/users/Goochimagne/repos')
+			.then(response => {
+				this.setState({repos: response.data});
 			});
-		});
 	}
 
 
 	render() {
-    if (this.state.repos !== null) {
-      return (<RepoGrid repo={this.state.repos}/>);
-    }
-
-    return this.state.repos;
+		if (this.state.repos === null) {
+      return (<p>LOADING . . . </p>);
+    } else {
+			return (<div id='proj'><RepoGrid repos={this.state.repos}/></div>);
+		}
   }
+}
+
+function RepoGrid(props) {
+	console.log(props.repos);
+	return (
+		<ul className='repo-list'>
+			{props.repos.map((repo, i) => {
+				return(
+					<div className='repo-container'>
+					<a href={repo.html_url}>
+
+						<li key={repo.name} className="repo-item">
+							<ul className="repo-info">
+								<li className="repo-name">{repo.name}</li>
+								<li className="repo-link">
+								{repo.html_url}
+								</li>
+								{Fork(repo.fork)}
+							</ul>
+						</li>
+						</a>
+
+					</div>
+				)
+			})}
+		</ul>
+	)
+}
+
+function Fork(fork) {
+	console.log(fork);
+	if (fork) {
+		return (<li className="fork">Forked</li>);
+	} else {
+		return (<li className="fork">Original</li>);
+	}
 }
 
 export default Projects;

@@ -15,18 +15,30 @@
 	position: relative;
 	top: 60px;
 	margin-top: 40px;
+	margin-left: 140px;
+	margin-right: 140px;
 	border-radius: 15px;
 	background-color: #ffffff;
 	display: inline-block;
-	box-shadow: 10px 10px 5px #888888;
 	align-items: center;
 	justify-content:space-around;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	flex-wrap: nowrap;
 }
 
 .src {
 	font-size: 25px;
+	margin-left: 20px;
+}
+
+.link-container :hover {
+	text-decoration: none;
+}
+
+.link-container:hover {
+	border-radius: 100px;
+	box-shadow: 10px 10px 5px #888888;
 }
